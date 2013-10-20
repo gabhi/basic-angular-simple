@@ -1,4 +1,24 @@
 <div id="sp-nav">
+   <div ng-init="friends = [
+      {name:'John', age:25, gender:'boy'},
+      {name:'Jessie', age:30, gender:'girl'},
+      {name:'Johanna', age:28, gender:'girl'},
+      {name:'Joy', age:15, gender:'girl'},
+      {name:'Mary', age:28, gender:'girl'},
+      {name:'Peter', age:95, gender:'boy'},
+      {name:'Sebastian', age:50, gender:'boy'},
+      {name:'Erika', age:27, gender:'girl'},
+      {name:'Patrick', age:40, gender:'boy'},
+
+      {name:'a', age:40, gender:'boy'},
+      {name:'b', age:40, gender:'boy'},
+      {name:'c', age:40, gender:'boy'},
+      {name:'d', age:40, gender:'boy'},
+      {name:'Samantha', age:60, gender:'girl'}
+    ]">
+
+
+</div>
 <ul class="list">
   <li>
     <form>
@@ -7,6 +27,7 @@
    
 </form>
   </li>
+
   <li class="animate-repeat" ng-repeat="friend in friends | filter:q">
         <a href="#">    {{friend.name}} 
         </a>
@@ -69,36 +90,16 @@
   </ul>
 </nav>
 <div class="content">
-    <div ng-init="friends = [
-      {name:'John', age:25, gender:'boy'},
-      {name:'Jessie', age:30, gender:'girl'},
-      {name:'Johanna', age:28, gender:'girl'},
-      {name:'Joy', age:15, gender:'girl'},
-      {name:'Mary', age:28, gender:'girl'},
-      {name:'Peter', age:95, gender:'boy'},
-      {name:'Sebastian', age:50, gender:'boy'},
-      {name:'Erika', age:27, gender:'girl'},
-      {name:'Patrick', age:40, gender:'boy'},
+   
 
-      {name:'a', age:40, gender:'boy'},
-      {name:'b', age:40, gender:'boy'},
-      {name:'c', age:40, gender:'boy'},
-      {name:'d', age:40, gender:'boy'},
-      {name:'Samantha', age:60, gender:'girl'}
-    ]">
-<ul class="list">
-  
-
-<li class="animate-repeat" ng-repeat="friend in friends | filter:q">
-        <a href="#">    {{friend.name}} 
-        </a>
-          <span class="chevron"></span>
-        </li>
-   </ul>
-
-</div>
-
-
+<a class="button-block">Linked List</a>
+<a class="button-main button-block">Stacks & Que</a>
+<a class="button-positive button-block">Matrix & arrays</a>
+<a class="button-negative button-block">Searching & Sorting</a>
+<a class="button-positive button-block">Trees & Graphs</a>
+<a class="button-positive button-block">Complexities</a>
+<a class="button-positive button-block">Strings</a>
+<a class="button-positive button-block">Algorithms</a>
 
 </div>
 
